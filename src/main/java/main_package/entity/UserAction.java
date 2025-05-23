@@ -11,7 +11,7 @@ import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKeyColumn;
 import org.springframework.data.cassandra.core.mapping.Table;
 
-@Table(value = "user")
+@Table(value = "user_action")
 @AllArgsConstructor
 @Getter
 @Setter

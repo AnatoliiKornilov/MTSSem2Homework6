@@ -35,7 +35,7 @@ public class DbConfig {
     session.execute(statement);
 
     session.execute("""
-            CREATE TABLE IF NOT EXISTS my_keyspace.user_audit (
+            CREATE TABLE IF NOT EXISTS my_keyspace.user_action (
                 id UUID,
                 event_time TIMESTAMP,
                 event_type TEXT,
