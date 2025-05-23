@@ -1,0 +1,27 @@
+:: Spring Boot ::                (v3.0.0)
+
+2025-05-23T18:09:50.784+03:00  INFO 34576 --- [           main] m.service.UserActionServiceTest          : Starting UserActionServiceTest using Java 22.0.2 with PID 34576 (started by HP in C:\Users\HP\IdeaProjects\MTSSem2Homework6)
+2025-05-23T18:09:50.791+03:00  INFO 34576 --- [           main] m.service.UserActionServiceTest          : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T18:09:51.864+03:00  INFO 34576 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+2025-05-23T18:09:51.945+03:00  INFO 34576 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 0 Reactive Cassandra repository interfaces.
+2025-05-23T18:09:51.975+03:00  INFO 34576 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2025-05-23T18:09:51.982+03:00  INFO 34576 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Cassandra repository interfaces.
+2025-05-23T18:09:52.667+03:00  INFO 34576 --- [           main] c.d.o.d.i.c.c.CqlPrepareAsyncProcessor   : Adding handler to invalidate cached prepared statements on type changes
+2025-05-23T18:09:52.677+03:00  INFO 34576 --- [     s1-admin-0] c.d.oss.driver.internal.core.time.Clock  : Could not access native clock (see debug logs for details), falling back to Java system clock
+2025-05-23T18:09:54.415+03:00  INFO 34576 --- [           main] c.d.o.d.i.c.c.CqlPrepareAsyncProcessor   : Adding handler to invalidate cached prepared statements on type changes
+2025-05-23T18:09:54.418+03:00  INFO 34576 --- [     s2-admin-0] c.d.oss.driver.internal.core.time.Clock  : Could not access native clock (see debug logs for details), falling back to Java system clock
+2025-05-23T18:09:55.839+03:00  INFO 34576 --- [           main] m.service.UserActionServiceTest          : Started UserActionServiceTest in 6.001 seconds (process running for 47.878)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 50.707 s - in main_package.service.UserActionServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  59.317 s
+[INFO] Finished at: 2025-05-23T18:10:02+03:00
+[INFO] ------------------------------------------------------------------------
+
+Process finished with exit code 0
