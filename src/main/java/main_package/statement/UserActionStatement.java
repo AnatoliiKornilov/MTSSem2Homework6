@@ -14,7 +14,7 @@ public class UserActionStatement {
 
     public UserActionStatement(CqlSession session) {
         this.selectStatement = session.prepare(
-            "SELECT * FROM my_keyspace.user WHERE id = ?"
+            "SELECT * FROM my_keyspace.user_action WHERE id = ?"
         );
         this.insertStatement = session.prepare(
             "INSERT INTO my_keyspace.user_action (id, event_time, event_type) " +
