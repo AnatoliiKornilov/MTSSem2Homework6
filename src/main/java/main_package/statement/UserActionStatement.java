@@ -14,10 +14,10 @@ public class UserActionStatement {
 
     public UserActionStatement(CqlSession session) {
         this.selectStatement = session.prepare(
-            "SELECT * FROM my_keyspace.user WHERE user_id = ?"
+            "SELECT * FROM my_keyspace.user WHERE id = ?"
         );
         this.insertStatement = session.prepare(
-            "INSERT INTO my_keyspace.user_audit (user_id, event_time, event_type) " +
+            "INSERT INTO my_keyspace.user_audit (id, event_time, event_type) " +
                 "VALUES (?, ?, ?)"
         );
     }
