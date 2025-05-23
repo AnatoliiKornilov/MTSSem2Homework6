@@ -23,7 +23,7 @@ public class DbConfig {
         DriverConfigLoader.programmaticBuilder()
             .withDuration(DefaultDriverOption.REQUEST_TIMEOUT, Duration.ofSeconds(10))
             .build()
-    ); ;
+    );
     sessionBuilder.withKeyspace((CqlIdentifier) null);
 
     CqlSession session = sessionBuilder.build();

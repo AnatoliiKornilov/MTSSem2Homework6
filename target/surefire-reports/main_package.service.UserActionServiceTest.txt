@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: main_package.service.UserActionServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 65.655 s <<< FAILURE! - in main_package.service.UserActionServiceTest
-main_package.service.UserActionServiceTest  Time elapsed: 65.596 s  <<< ERROR!
-org.testcontainers.containers.ContainerLaunchException: Container startup failed for image cassandra:4.1.3
-Caused by: org.rnorth.ducttape.RetryCountExceededException: Retry limit hit with exception
-Caused by: org.testcontainers.containers.ContainerLaunchException: Could not create/start container
-Caused by: org.testcontainers.containers.ContainerLaunchException: Timed out waiting for log output matching '.*Created default superuser role 'cassandra'.*'
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.554 s - in main_package.service.UserActionServiceTest

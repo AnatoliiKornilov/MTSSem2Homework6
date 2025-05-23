@@ -18,11 +18,9 @@ public class UserActionService {
   @Autowired
   private CqlSession session;
 
-  @Autowired
-  private UserActionStatement userStatement;
-
   public List<Row> getById(UUID id) {
-    BoundStatement boundStatement = userStatement.getSelectStatement().bind(id);
+    UserActionStatement userActionStatement = new UserActionStatement(session);
+    BoundStatement boundStatement = userActionStatement.getSelectStatement().bind(id);
     ResultSet resultSet = session.execute(boundStatement);
     List<Row> result = new ArrayList<>();
     for (Row row : resultSet) {
@@ -32,8 +30,8 @@ public class UserActionService {
   }
 
   public void insertAction(UserAction userAction) {
-
-    BoundStatement boundStatement = userStatement.getInsertStatement().bind(
+    UserActionStatement userActionStatement = new UserActionStatement(session);
+    BoundStatement boundStatement = userActionStatement.getInsertStatement().bind(
         userAction.getId(),
         userAction.getEventTime(),
         userAction.getEventType()
