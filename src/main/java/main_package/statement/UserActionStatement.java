@@ -17,7 +17,7 @@ public class UserActionStatement {
             "SELECT * FROM my_keyspace.user WHERE id = ?"
         );
         this.insertStatement = session.prepare(
-            "INSERT INTO my_keyspace.user_audit (id, event_time, event_type) " +
+            "INSERT INTO my_keyspace.user_action (id, event_time, event_type) " +
                 "VALUES (?, ?, ?)"
         );
     }
