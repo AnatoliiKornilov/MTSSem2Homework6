@@ -1,4 +1,4 @@
-package main_package;
+package main_package.config;
 
 import com.datastax.oss.driver.api.core.CqlIdentifier;
 import com.datastax.oss.driver.api.core.CqlSession;
